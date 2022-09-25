@@ -6,10 +6,10 @@ COPY . .
 
 RUN npm i
 
-RUN npm run install:serve
 RUN npm run build
 
 CMD npm run prod
 
+EXPOSE 3000
 
 
