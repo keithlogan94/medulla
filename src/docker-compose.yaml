@@ -6,6 +6,8 @@ services:
       - "8000:5000"
   backend:
     build: ./backend
+    ports:
+      - "8080:3000"
   mongo:
     image: mongo
     restart: always
