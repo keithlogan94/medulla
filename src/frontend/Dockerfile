@@ -1,0 +1,16 @@
+FROM node:18-alpine3.15
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm i
+
+RUN npm run build
+RUN npm run install:serve
+
+CMD npm run prod
+
+EXPOSE 3000
+
+
