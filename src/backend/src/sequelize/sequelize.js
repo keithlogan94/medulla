@@ -1,9 +1,9 @@
 import {Sequelize} from 'sequelize';
 
+const { DATABASE_NAME, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_HOST } = process.env;
 
-// Option 3: Passing parameters separately (other dialects)
-const sequelize = new Sequelize('database', 'username', 'password', {
-  host: 'localhost',
+const sequelize = new Sequelize(DATABASE_NAME, DATABASE_USERNAME, DATABASE_PASSWORD, {
+  host: DATABASE_HOST,
   dialect: 'mysql',
 });
 
