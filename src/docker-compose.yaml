@@ -12,7 +12,6 @@ services:
     build: ./backend
     depends_on:
     - db
-#    - keycloak
     ports:
       - "8080:3000"
     environment:
