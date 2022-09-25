@@ -21,6 +21,8 @@ async function getSequelize() {
   } catch (error) {
     console.error('Unable to connect to the database:', error);
   }
+
+  return sequelize
 }
 
 
